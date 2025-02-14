@@ -1,0 +1,121 @@
+/* GLOBAL STYLES */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+  background-color: #f8f9fa; /* Fond légèrement gris pour un contraste doux */
+}
+
+/* CAROUSEL */
+.carousel {
+  margin-bottom: 4rem;
+  height: 100vh; /* Permet d'occuper tout l'écran */
+}
+
+.carousel-item {
+  position: relative; /* Ajoute cette propriété pour que la position absolue des captions fonctionne */
+  height: 100vh; /* Occupation de toute la hauteur de l'écran */
+}
+
+.carousel-item img {
+  height: 100%; /* Remplir toute la hauteur du conteneur */
+  width: 100%;  /* Remplir toute la largeur du conteneur */
+  object-fit: cover; /* Garantir que l'image remplit l'espace sans déformation */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère */
+}
+
+/* Amélioration des captions */
+.carousel-caption {
+  position: absolute;   /* Position absolue */
+  bottom: 2rem;         /* Espacement du bas */
+  left: 50%;            /* Centré horizontalement */
+  transform: translateX(-50%);  /* Centrage parfait */
+  max-width: 70%;       /* Largeur maximale */
+  background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+  padding: 20px;        /* Espace intérieur */
+  border-radius: 12px;  /* Coins arrondis */
+  z-index: 10;          /* Texte au-dessus de l'image */
+  font-size: 1.2rem;    /* Taille de texte */
+  text-align: center;   /* Centrage du texte */
+  backdrop-filter: blur(5px); /* Ajoute un effet de flou */
+}
+
+/* Texte du carrousel */
+.carousel-caption h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff; /* Texte blanc pour bien ressortir */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Effet d’ombre pour lisibilité */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Bouton dans le carrousel */
+.carousel-caption .btn {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Boutons de navigation */
+.carousel-control-prev, 
+.carousel-control-next {
+  filter: brightness(0.8);
+}
+
+/* Transitions douces */
+.carousel-item {
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+/* Responsive pour différentes tailles d’écrans */
+@media (max-width: 768px) {
+  .carousel {
+    height: 80vh; /* Moins haut sur mobile */
+  }
+
+  .carousel-item {
+    height: 80vh;
+  }
+
+  .carousel-caption {
+    bottom: 1rem;
+    max-width: 90%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 60vh; /* Ajustement pour écrans plus grands */
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item {
+    height: 55vh;
+  }
+}
+
+

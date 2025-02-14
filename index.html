@@ -1,0 +1,371 @@
+
+<!doctype html>
+<html lang="fr" data-bs-theme="auto">
+  <head>
+    <script src="color-mode.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio d'Arthur Bambara, étudiant en Techniques de l'informatique">
+    <meta name="author" content="Arthur Bambara">
+    <title>Arthur Bambara - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolioStyle.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="img/first-icon.png">
+    <link rel="icon" href="img/Second-icon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/third-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="img/six.ico">
+    <meta name="theme-color" content="#712cf9">
+
+    
+    <style>
+      .carousel-item img {
+        object-fit: cover;
+        height: 65vh;
+        width: 100%;
+      }
+      .skill-icon {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column">
+
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 60px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Arthur Bambara</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#projects">Projets</a></li>
+              <li class="nav-item"><a class="nav-link" href="#certifications">Certificats</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- Section pour le texte dynamique -->
+      <div id="dynamicTextSection" class="text-center mt-5">
+        <h2 id="dynamicTitle">Bienvenue sur mon portfolio</h2>
+        <p id="dynamicDescription" style="width: 80%; margin: auto;"></p>
+      </div>
+      
+      <div id="myCarousel" class="carousel slide  mt-3   mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active"> 
+            <img src="img\BlaBlaton.jpg" class="d-block w-100 " alt="BlaBlaton Blazor">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>BlaBlaton Blazor</h1>
+                <p class="opacity-75">Réseau social Blablaton</p>
+                <p><a class="btn btn-lg btn-primary" href="https://github.com/hounsouthohin/ReseauSocial"  target="_blank">Voir sur GitHub</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\ColApp.jpg" class="d-block w-100 " alt="ColApp Blazor">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>ColApp Blazor</h1>
+                <p class="opacity-75">Scolaire ColApp</p>
+                <p><a class="btn btn-lg btn-primary" href="https://github.com/hounsouthohin/ColApp" target="_blank">Voir sur GitHub</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\catVsDog.png" class="d-block w-100 " alt="cat vs dog">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Cat VS Dog</h1>
+                <p class="opacity-75">Reconnaissance d'images de Chiens et de Chats</p>
+                <p><a class="btn btn-lg btn-primary" href="https://www.kaggle.com/code/hounsouthohin/cat-vs-dog/edit" target="_blank">Voir sur Kaggle</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\Bears.jpg" class="d-block w-100 " alt="bears recognition">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Reconnaissance d'Ours</h1>
+                <p class="opacity-75">Prédiction d'images d'Ours</p>
+                <p><a class="btn btn-lg btn-primary" href="https://www.kaggle.com/code/hounsouthohin/bears-rec#For-example,-here's-several-helpful-packages-to-load" target="_blank">Voir sur Kaggle</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\Meteo.jpg" class="d-block w-100" alt="Meteo Laravel">       
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Meteo Laravel</h1>
+                <p class="opacity-75">Prédiction Météo</p>
+                <p><a class="btn btn-lg btn-primary" href="https://github.com/hounsouthohin/ProjetExploration" target="_blank">Voir sur GitHub</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\Skyline.png" class="d-block w-100 " alt="City Skyline">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Buildings dans la Ville</h1>
+                <p class="opacity-75">City Skyline</p>
+                <p><a class="btn btn-lg btn-primary" href="https://github.com/hounsouthohin/City-Skyline" target="_blank">Voir sur GitHub</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container marketing">
+        <div class="row" id="skills">
+          <h2 class="text-center mb-4">Compétences</h2>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-icon">
+            <p>Python</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="IMG/Net.png" alt=".NET Core Logo" class="skill-icon">
+            <p>.NET Core</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="JavaScript Logo" class="skill-icon">
+            <p>JavaScript</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="IMG/blazor.png" alt="Blazor Logo" class="skill-icon">
+            <p>Blazor</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C# Logo" class="skill-icon">
+            <p>C#</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" class="skill-icon">
+            <p>C++</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS Logo" class="skill-icon">
+            <p>CSS</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="skill-icon">
+            <p>HTML</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4 skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" class="skill-icon">
+            <p>PHP</p>
+          </div>
+        </div>
+
+        <div class="row featurette mb-5" id="projects">
+          <div class="mb-5">
+            <h2 class="text-center ">Mes Projets</h2>
+          </div>
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">Application Scolaire avec Blazor</h3>
+            <ul class="lead">
+              <li class="link-container">
+                <i class="fab fa-github"></i> 
+                My Github Projects - <a href="https://github.com/hounsouthohin/ColApp" target="_blank">hounsouthohin</a>
+              </li>
+            
+            </ul>
+          </div>
+          <div class="col-md-5 myImg">
+            <img src="img\ColApp.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="ColApp">
+          </div>
+          
+                
+        </div>  
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette mb-5" id="projects">
+          <div class="col-md-5 myImg">
+            <img src="img\BlaBlaton.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Blablaton">
+          </div>
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">Réseau social App avec Blazor</h3>
+            <ul class="lead">
+              <li class="link-container">
+                <i class="fab fa-github"></i> 
+                My Github Projects - <a href="https://github.com/hounsouthohin/ReseauSocial" target="_blank">hounsouthohin</a>
+            </li>
+            
+            </ul>
+          </div>
+                
+        </div>  
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette mb-5" id="projects">
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">City skyline</h3>
+            <ul class="lead">
+              <li class="link-container">
+                  <i class="fab fa-github"></i> 
+                  My Github Projects - <a href="https://github.com/hounsouthohin/City-Skyline" target="_blank">hounsouthohin</a>    
+            </li>
+            
+            </ul>
+          </div>
+          <div class="col-md-5 myImg">
+            <img src="IMG/Skyline.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="City Skyline">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette mb-5" id="projects">
+          <div class="col-md-5 myImg">
+            <img src="img\catVsDog.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="catVsDog">
+          </div>
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">Reconnaissance d'images de chat et de chien</h3>
+            <ul class="lead">
+              <li>
+                <img src="img\kaggle-update.png" alt="kaggle_logo" class="rounded"> 
+                My Kaggle Projects - <a href="https://www.kaggle.com/code/hounsouthohin/cat-vs-dog/edit">hounsouthohin</a>
+              </li>
+            </ul>
+          </div> 
+        
+        </div>
+
+        
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette mb-5" id="projects">
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">Application Météo avec Laravel</h2>
+            <ul class="lead">
+              <li class="link-container">
+                <i class="fab fa-github"></i> 
+                My Github Projects - <a href="https://github.com/hounsouthohin/ProjetExploration" target="_blank">hounsouthohin</a>
+            </li>
+            
+            </ul>
+          </div>
+          <div class="col-md-5 myImg">
+            <img src="img\Meteo.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="LaravelMeteo">
+          </div>      
+        </div>  
+
+        <hr class="featurette-divider">
+
+
+        <div class="row featurette mb-5" id="projects">
+          <div class="col-md-5 myImg">
+            <img src="img\Bears.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="LaravelMeteo">
+          </div> 
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">Reconnaissance d'ours</h3>
+            <ul class="lead">
+              <li class="link-container">
+                 <img src="img\kaggle-update.png" alt="kaggle_logo" class="rounded">
+                My Kaggle Projects - <a href="https://www.kaggle.com/code/hounsouthohin/bears-rec#For-example,-here's-several-helpful-packages-to-load" target="_blank">hounsouthohin</a>
+              </li>
+            </ul>
+          </div>
+               
+        </div>
+        
+
+        <hr class="featurette-divider">
+
+        <div class="container mb-5" id="certifications">
+          <h2 class="text-center mb-4">Certifications</h2>
+          <div class="row justify-content-center">
+            <!-- Certification 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="certification-card">
+                <img src="img\freeCode.png" alt="Certification 1" class="certification-img">
+                <div class="certification-info">
+                  
+                  <p>Développement Web Certificat</p>
+                  <a href="https://www.freecodecamp.org/certification/hounsouthohin/responsive-web-design" target="_blank" class="btn btn-primary">Voir sur freeCodeCamp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      
+    </main>
+    <footer style="background-color: #18232d; color: #f8f9fa; padding: 15px; text-align: center;">
+      <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+      <p style="font-size: 14px; color: #7d7d7d;">© 2025 Arthur Portfolio. Tous droits réservés.</p>
+      <div style="margin-top: 20px;">
+        <a href="https://www.linkedin.com/in/arthur-bambara-776068264" target="_blank" style="margin: 0 10px; color: #0077b5;" target="_blank">LinkedIn</a>
+
+        <a href="https://github.com/hounsouthohin" style="margin: 0 10px; color: #333;">GitHub</a>
+        <a href="mailto:contact@example.com" style="margin: 0 10px; color: #8a8a8a;">Contact</a>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const skills = document.querySelectorAll(".skill-box");
+      
+          function revealSkills() {
+              skills.forEach((skill, index) => {
+                  setTimeout(() => {
+                      skill.style.opacity = 1;
+                      skill.style.transform = "translateY(0)";
+                  }, index * 150); // Effet de cascade
+              });
+          }
+      
+          window.addEventListener("scroll", () => {
+              let triggerPoint = window.innerHeight * 0.85;
+              skills.forEach(skill => {
+                  if (skill.getBoundingClientRect().top < triggerPoint) {
+                      skill.style.animation = "bounce-in 1s ease-out";
+                  }
+              });
+          });
+      
+          revealSkills();
+      });
+      </script>
+      <script src="affichage.js"></script>
+
+  </body>
+</html>

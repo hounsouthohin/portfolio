@@ -1,0 +1,11 @@
+/*media print*/
+
+    p {
+        background-color: yellow;
+        color: red;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }

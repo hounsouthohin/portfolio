@@ -1,0 +1,166 @@
+/* Couleurs principales */
+:root {
+    --primary-bg: #18232d;
+    --secondary-bg: #212f3d;
+    --text-color: #f8f9fa;
+    --text-secondary: #b0b3b8;
+    --accent-color: #0077b5;
+    --accent-hover: #005a8e;
+    --highlight-color: #ffb400;
+}
+#dynamicTextSection {
+    padding: 20px;
+    background-color: #1a1d23; /* Fond légèrement gris */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+  }
+  
+  #dynamicTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #dynamicDescription {
+    font-size: 1.2rem;
+    color:  #007bff; /* Texte gris foncé */
+  }
+  
+/* Styles généraux */
+main {
+    background-color: #1a1d23; /* Plus sombre mais pas totalement noir */
+    color: var(--text-color);
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-bg) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+.nav-link:hover {
+    color: var(--highlight-color) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-bg);
+    color: var(--text-secondary);
+}
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--highlight-color);
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+/* Carousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Certifications */
+.certification-card {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: var(--text-color);
+}
+.certification-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Skills */
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    filter: grayscale(50%);
+}
+.skill-icon:hover {
+    filter: grayscale(0%);
+}
+
+
+
+
+
+.skill-icon {
+    width: 80px; /* Ajuste selon ton design */
+    height: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-box {
+    position: relative;
+    animation: bounce-in 1s ease-out;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(5px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+a {
+    text-decoration: none !important; /* Supprime le soulignement */
+    color: #007bff; /* Couleur moderne */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #ff5722; /* Change de couleur au survol */
+    transform: scale(1.1); /* Effet d'agrandissement */
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacement entre l'icône et le texte */
+    font-size: 18px;
+}
+
+.link-container i {
+    color: #007bff; /* Couleur de l'icône */
+    transition: color 0.3s ease;
+}
+
+.link-container:hover i {
+    color: #ff5722; /* Changement de couleur au survol */
+}

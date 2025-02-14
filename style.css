@@ -1,0 +1,228 @@
+
+
+
+
+
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+   
+
+      /* Style pour la section des certifications */
+.certification-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+}
+
+.certification-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.certification-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.certification-info h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.certification-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.certification-info a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.myImg img {
+  display: block;
+  border-radius: 12px; /* Coins légèrement arrondis */
+  border: 1px solid transparent; /* Bordure ultra-fine */
+  padding: 1px; /* Réduit au minimum pour éviter l'effet de double bordure */
+
+  /* Bordure arc-en-ciel ultra-fine */
+  background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, purple);
+  background-size: 300% 300%;
+  animation: rainbowBorder 4s linear infinite;
+  
+  /* Ombre subtile et fine */
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes rainbowBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+ .myImg img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #007bff;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 4px;
+  background-color: #007bff;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+h2:hover::after {
+  width: 100%;
+  left: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Police moderne */
+  position: relative;
+  padding-bottom: 8px;
+}
+
+/* Ligne soulignée discrète */
+h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #007bff; /* Bleu moderne */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+h2:hover::after {
+  width: 80px; /* La ligne s'allonge au survol */
+}
+
+h2:hover {
+  color: #0056b3; /* Changement subtil de couleur */
+}
+
+@keyframes rainbow-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.featurette-divider {
+  border: none;
+  height: 2px; /* Ligne très fine */
+  width: 60%;
+  margin: 30px auto;
+  background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+  background-size: 400% 400%;
+  animation: rainbow-glow 5s infinite linear;
+  border-radius: 1px; /* Coins arrondis */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Effet lumineux */
+}
+
+
+
